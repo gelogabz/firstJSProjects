@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sass/main.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="icon" type="image/x-icon" href="/iconWhite.png" />
+        <title>WD20P - Function Practice 2</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="second.js"></script>
+
+        <style>
+            body {
+                font-family: Poppins, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body class="bg-dark">
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="FullnameIcon.png" class="text-white w-50"
+                        alt="Me"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Temperature Converter</a>
+                        <a class="nav-link active" href="second.html">Basic Arithmetic</a>
+                        <a class="nav-link" href="third.html">Multi-Unit Length Converter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="container-fluid text-center my-4 py-3">
+            <h1 class="lead display-4 fw-bold text-light">Basic Arithmetic</h1>
+        </header>
+        <section class="container-fluid">
+            <div class="justify-content-center my-4 p-3 input-group gap-1">
+                <input type="text" id="inputOne">
+                <select name="arithmetic" class="dropdown p-2 text-bg-secondary fw-bolder" id="selection">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">x</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="text" id="inputTwo">
+                <button type="button" class=" btn btn-success btn-lg" id="buttonOne"
+                    onclick="arithmeticSelection();">=</button>
+
+            </div>
+        </section>
+
+        <div class="answerPart container text-center align-items-center">
+            <p class="container text-center text-light fw-bolder lead border border-3 rounded-4 p-2 w-25"
+                id="answerParagraph">
+                Answer will be
+                displayed here
+            </p>
+        </div>
+
+        <!-- Footer start -->
+        <br><br>
+        <footer class="fixed-bottom container-fluid py-1 my-1">
+            <ul class="nav justify-content-center pb-1 mb-1 border-bottom">
+                <li><a href="https://twitter.com/gelogabz" class="nav-link px-2 text-muted" target="_blank"><i
+                            class="nav-item bi bi-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/thegeloman/" class="nav-link px-2 text-muted" target="_blank"><i
+                            class="bi bi-instagram"></i></a></li>
+                <li><a href="https://github.com/gelogabz" class="nav-link px-2 text-muted" target="_blank"><i
+                            class="bi bi-github"></i></a></li>
+                <li><a href="https://www.reddit.com/user/gelogabz" class="nav-link px-2 text-muted" target="_blank"><i
+                            class="bi bi-reddit"></i></a></li>
+            </ul>
+            <p class="text-center text-muted">&copy;2022 <br>Gelo Baring for WD20P </p>
+        </footer>
+        <!-- Footer end -->
+
+
+    </body>
+
+</html>
